@@ -1,0 +1,77 @@
+﻿body,div,ul,li {
+    padding: 0;
+    margin:0;
+    
+}
+
+/*body*/
+body {
+    background-color: rgb(237,237,237);
+    font-family: Arial,Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/*Page*/
+#wrapper
+{
+    width:950px;
+    margin:auto;
+}
+
+/*Home page*/
+#content
+{
+    width: 100%;
+    background-color: rgb(254,254,254);
+    border: 1px solid rgb(224,224,224);
+    border-radius:5px 5px 5px 5px;
+    float:left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    min-height: 400px;
+}
+
+/*Menu*/
+#menu{
+    background-color:rgb(10,110,178);
+    width: 100p%;
+    margin: 0px 0px 10px;
+    padding: 0px;
+    height: 40px;
+    color:  rgb(243, 243, 243);
+    border-radius:5px 5px 5px 5px;
+
+}
+
+#menu ul{ }
+
+#menu ul li {
+    float: left;
+    display:block;
+    list-style: none;
+    border-right: 1px solid rgb(10,85,125);
+    border-left:  1px solid rgb(67,153,200);
+}
+
+#menu ul li a{
+    font-size:13px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 8px 20px;
+    color: rgb(255,255,255);
+    text-decoration:none;
+}
+
+#menu li a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+#clear{
+    clear:both;
+}
+
+#footer h2{
+    padding:15px;
+    text-align:center;
+}

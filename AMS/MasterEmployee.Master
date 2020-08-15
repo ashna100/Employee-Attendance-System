@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterEmployee.master.cs" Inherits="WebApplication1.AMS.MasterEmployee" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Styles/custom.css" rel="stylesheet" />
+    
+    <style type="text/css">
+        .auto-style1 {
+            left: -70px;
+            top: 0px;
+            width: 301px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="menu" class="header">
+            <ul>
+                <li class="auto-style1"><a href="#"> Online Attendance System</a></li>
+                <li><a href="HomePageEmployee.aspx">Home</a></li>
+                <li><a href="MyAttendance.aspx">Attendance</a></li>
+                <li><a href="EmployeeReports.aspx">Report</a></li>
+                <li><a href="#">Leave</a>
+                    <ul>
+                        <li><a href="EmployeeHolidays.aspx">Holidays</a></li>
+                        <li><a href="Application.aspx">Apply Leaves</a></li>
+                    </ul>
+                </li>
+                <li><a href="EmployeeDocument.aspx">Documents</a></li>
+                <li><a href="Feedback.aspx">FeedBack</a></li>
+                                
+                <li class="login-btn-box">
+                    <%--<asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" >Login</asp:LinkButton>--%>
+                    <%--<asp:LinkButton ID="LinkButton2" runat="server"  >Logout</asp:LinkButton>--%>
+                    <a href="LoginPage.aspx">Logout</a>
+                </li>
+            </ul>
+            </div>
+        
+            
+                        <div class="mid-content-wrp">
+                            <div class="container">
+              <asp:ContentPlaceHolder ID="ContentEmployee" runat="server">
+                  </asp:ContentPlaceHolder>
+                                </div>
+                            </div>
+        
+
+        <div class="welcome-msg"> 
+            <div class="icon-box">
+                <i class="fa fa-user"></i>
+            </div>
+                        <asp:Label ID="LabelMaster" runat="server" CssClass="wlcm-p"></asp:Label>
+                    </div>
+
+        <div class="footer">
+            <p>Copyright @Ashna Khanna MCA VI semester 2020</p>
+        </div>
+        </form>
+    </body>
+    </html>

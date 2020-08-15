@@ -1,0 +1,364 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Calibri;
+    color:#666;
+    font-size:14px;
+}
+h1, h2, h3, h4, h5, h6{
+    margin-bottom:20px;
+}
+.header {
+    background: #fff;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+}
+.header ul {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+.header ul li {
+    float: left;
+    position: relative;
+    padding: 6px 0px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    font-family: Calibri;
+    display: block;
+    color: #444;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 4px;
+}
+
+.header ul li a:hover {
+    background: #0f5395;
+    color: black;
+    color:#fff;
+}
+
+    .header ul li ul {
+        display: none;
+        width: 100%;
+        background: #f3f1f1;
+        z-index: 99999;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+        padding:5px;
+    }
+            
+.header ul li:hover ul {
+    display: block;
+}
+
+.header ul ul {
+    position: absolute;
+}
+
+    .header ul li > ul li {
+        width: 100%;
+        text-align: left;
+        padding: 0px;
+    }
+.header ul li > ul li a {
+    font-size: 14px;
+    padding: 8px 15px;
+}
+.header ul li ul.three-col {
+    width: 475px;
+}
+
+.header ul li ul.three-col li {
+    width: calc(100% / 3);
+    text-align: left;
+  }
+.footer {
+    position: fixed;
+    background: rgb(95, 95, 95);
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    bottom: 0px;
+    color: #fff;
+}
+
+.welcome-msg {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:none;
+}
+.welcome-msg .icon-box {
+    margin-bottom: 20px;
+}
+.welcome-msg .icon-box i {
+    font-size: 80px;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 150px;
+}
+.welcome-msg .wlcm-p {
+    color: #fff;
+    font-size: 20px;
+    background: rgba(0, 0, 0, .4);
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0px auto;
+}
+
+.mid-content-wrp {
+    padding: 50px 0px;
+}
+
+.login-box {
+    background: #fff;
+    width: 350px;
+    margin: auto;
+    padding: 30px 40px 10px 40px;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 300px;
+}
+
+.login-box .form-group {
+    margin-bottom: 20px;
+}
+.login-box .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+    .login-box .form-group input, .login-box .form-group select {
+        width: 100%;
+        height: 36px;
+    }
+.form-group.btn-box .btn {
+    width: calc(100% / 2 - 10px);
+    background: #0f5395;
+    color: #fff;
+    border: 0px;
+    border-radius: 4px;
+    height: 36px;
+    cursor: pointer;
+}
+.form-group.btn-box .btn.full {
+    width:100%;
+}
+.form-group.btn-box .btn.cancel {
+    float: right;
+    color: #0f5395;
+    border: 1px solid #0f5395;
+    background: #fff;
+
+}
+.text-center{
+    text-align:center;
+}
+.table{
+}
+.table th {
+    text-align: left;
+    background: #0f5395;
+    padding: 10px;
+    color: #fff;
+}
+
+.table td {
+    padding: 6px 10px;
+}
+
+.table tr:nth-child(even) {
+    background: #fff !important;
+}
+
+.table tr:nth-child(odd) {
+    background: #e6e6e6 !important;
+}
+    .table td a {
+        color: #0f5395 !important;
+    }
+    .filter-box {
+        border: 1px solid #ddd;
+        padding: 30px;
+        overflow: hidden;
+        border-radius: 8px;
+        background: #f6f7f9;
+        margin-bottom:20px;
+    }
+
+.filter-box .form-group {
+    width: calc(100% / 3 - 30px);
+    float: left;
+    margin-right: 30px;
+}
+
+.filter-box .form-group span {
+    margin-bottom: 5px;
+    display:block;
+}
+
+.filter-box .form-group input, .filter-box .form-group select {
+    height: 30px;
+    width: 100%;
+}
+.filter-box .form-group.btn-box .btn {
+    width: calc(100% / 3 - 14px);
+    margin-right: 10px;
+    margin-top: 21px;
+}
+
+.filter-box .form-group.btn-box {
+    margin-right: 0px;
+}
+
+
+.login-box.register-box {
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    transform: inherit;
+    width: 700px;
+    height: auto;
+    overflow: hidden;
+}
+
+.login-box.register-box .form-group {
+    width: calc(50% - 15px);
+    float: left;
+    /* margin-right: 20px; */
+}
+
+.login-box.register-box .form-group:nth-child(even) {
+    margin-right: 0px;
+    float: right;
+}
+
+
+.login-box.register-box .form-group.btn-box.full {
+    width: 100%;
+}
+
+.login-box.register-box .form-group.btn-box.full .btn {
+    width: calc(100% / 3 - 10px) !important;
+}
+
+.login-box.register-box .form-group.btn-box.full .btn:last-child {
+    margin-left: 10px;
+}
+
+.div-msg {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+
+#Gain {
+	padding: 45px 0;
+}
+#Gain .title {
+	width: 70%;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+#Gain .title h3 {
+	font: 500 26px/115% 'Open Sans', sans-serif;
+	color: #333;
+	margin: 0 0 30px;
+}
+#Gain .title p {
+	font: 400 16px/155% 'Open Sans', sans-serif;
+	color: #333;
+	margin: 0 0 30px;
+}
+#Gain .each-icon {
+	background-color: #00a498;
+	min-height: 450px;
+	text-align: center;	
+	cursor: pointer;
+	position: relative;
+}
+#Gain .each-icon .icon-wrap {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+#Gain .each-icon .icon-wrap i {
+	color: #fff;
+	font-size: 100px;
+}
+#Gain .each-icon .icon-text {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	padding: 10px 20px;
+	text-align: left;
+	transition: all 0.5s;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+#Gain .each-icon .icon-text h3 {
+	color: #fff;
+	margin: 0 0 15px;
+	font: 700 20px/115% 'Open Sans', sans-serif;
+}
+#Gain .each-icon .icon-text p {
+	color: #fff;
+	margin: 0 0 15px;
+	font: 400 18px/115% 'Open Sans', sans-serif;
+}
+#Gain .each-icon .icon-text .cta a {
+	color: #fff;
+	display: inline-block;
+}
+#Gain .each-icon .icon-text .cta i {
+	color: #fff;
+	font-size: 25px;
+	position: relative;
+	left: -15px;
+	transition: all 0.3s;
+}
+#Gain .each-icon:hover .icon-text .cta a i {
+	opacity: 1;
+	left: 0;
+	transition: all 0.3s;
+}
+#Gain .each-icon .icon-text .cta a:hover i {
+	color: #006f65;
+}
+#Gain .each-icon:hover .icon-wrap {
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s;
+}
+    #Gain .each-icon:hover .icon-text {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.5s;
+    }

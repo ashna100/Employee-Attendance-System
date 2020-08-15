@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.AMS.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Styles/custom.css" rel="stylesheet" />
+    
+    <style type="text/css">
+        .auto-style1 {
+            left: -70px;
+            top: 0px;
+            width: 301px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="menu" class="header">
+            <ul>
+                <li class="auto-style1"><a href="#"> Online Attendance System</a></li>
+                <li><a href="MainWindow1.aspx">Home</a></li>
+                
+                <li><a href="#">Master Pages</a>
+                    <ul class="three-col">
+                        <%--<li><a href="BloodGroup.aspx">Blood Group</a></li>--%>
+                        <li><a href="BloodGroup.aspx">Blood Group</a></li>
+                        <li><a href="City.aspx">City</a></li>
+                        <li><a href="Country.aspx">Country</a></li>
+                        <li><a href="Department.aspx">Department</a></li>
+                        <li><a href="Designation.aspx">Designation</a></li>
+                        <li><a href="EmpType.aspx">Employee Type</a></li>
+                        <li><a href="Gender.aspx">Gender</a></li>
+                        <li><a href="Holidays.aspx">Holiday</a></li>
+                        <li><a href="MaritalStatus.aspx">Marital Status</a></li>
+                        <li><a href="Grade.aspx">Grade</a></li>
+                        <li><a href="State.aspx">State</a></li>
+                        <li><a href="OutdoorAttendance.aspx">Outdoor Attendance</a></li>
+                        <li><a href="WeekOff.aspx">Week OFF</a></li>
+                        <li><a href="LeaveType.aspx">Leave Type</a></li>
+                        <li><a href="LeaveAssign.aspx">Leave Assign</a></li>
+                        <li><a href="ReportingManager.aspx">Reporting Manager</a></li>
+                        <li><a href="Documents.aspx">Documents</a></li>
+                        <li><a href="AdminFeedbacks.aspx">Feedbacks</a></li>
+                </ul>
+                </li>
+                <li><a href="#">User Management</a>
+                    <ul>
+                        <li><a href="Registeration.aspx">User Registration</a></li>
+                    </ul>
+                </li>
+                <li><a href="Admin_Application.aspx">Applications</a></li>
+                
+                <li><a href="AboutPage.aspx">About</a></li>
+
+                <li><a href="ContactUs.aspx">Contact Us</a></li>
+
+                <li class="login-btn-box">
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click" >Login</asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton2" runat="server"  OnClick="LinkButton2_Click">Logout</asp:LinkButton>
+                </li>
+            </ul>
+            
+        </div>
+        
+                        <div class="mid-content-wrp">
+                            <div class="container">
+                                <asp:ContentPlaceHolder ID="Content" runat="server">
+                            <%--<table class="auto-style2">
+                                <tr>
+                                    <td class="auto-style3" style="border-style: solid; background-color: #33CCFF; table-layout: fixed">
+                                        <asp:Label ID="Label1" runat="server" BackColor="#FFCCCC" BorderColor="White" BorderStyle="Dashed" BorderWidth="2px" Text="Label"></asp:Label>
+                                    </td>
+                                    <td style="border-style: solid; background-color: #33CCFF; table-layout: fixed">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style3" style="border-style: solid; background-color: #33CCFF; table-layout: fixed">
+                                        <asp:Label ID="Label2" runat="server" BackColor="#FFCCCC" BorderColor="White" BorderStyle="Dashed" BorderWidth="2px" Text="Label"></asp:Label>
+                                    </td>
+                                    <td style="border-style: solid; background-color: #33CCFF; table-layout: fixed">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="border-style: solid; background-color: #33CCFF; table-layout: fixed">
+                                        <asp:Button ID="Button1" runat="server" BackColor="#FFCCCC" BorderColor="White" BorderStyle="Dashed" BorderWidth="2px" Text="Button" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <asp:Button ID="Button2" runat="server" BackColor="#FFCCCC" BorderColor="White" BorderStyle="Dashed" BorderWidth="2px" Text="Button" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <asp:Button ID="Button3" runat="server" BackColor="#FFCCCC" BorderColor="White" BorderStyle="Dashed" BorderWidth="2px" Text="Button" />
+                                    </td>
+                                </tr>
+                            </table>--%>
+                        </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+        <div class="welcome-msg"> 
+            <div class="icon-box">
+                <i class="fa fa-user"></i>
+            </div>
+                        <asp:Label ID="LabelMaster" runat="server" CssClass="wlcm-p"></asp:Label>
+                    </div>
+
+        <div class="footer">
+            <p>Copyright @Ashna Khanna MCA VI semester 2020</p>
+        </div>
+        
+    </form>
+</body>
+</html>
+    
